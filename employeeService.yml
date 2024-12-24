@@ -1,18 +1,14 @@
-server:
-  port: 8082
-  
 spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
   h2:
     console:
-      enabled: true 
-        
-  application:
-    name: employeeService
-    
+      enabled: true
+  application: employeeService
   datasource:
     url: jdbc:h2:mem:testdb
-    
+    username: sa
+    password: 
 
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
